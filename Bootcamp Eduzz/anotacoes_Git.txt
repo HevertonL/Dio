@@ -1,0 +1,65 @@
+Git e Git Hub
+
+SHA1 é um conjunto de funções hash criptográficas projetadas pela NSA, gerando um conjunto de caracteres identificador de 40 dígitos. Sendo uma forma curta de representar um arquivo.
+
+comando: openssl sha1 nomeDoArquivo
+
+Objetos internos
+
+* Blobs - Vai conter o tipo do objeto, tamanho do arquivo, uma \0 e o conteúdo do arquivo;
+
+comando echo 'conteudo' git hash-object --stdin
+
+echo -e 'blob9\conteudo' openssl sha1
+
+* Trees - Armazenam blobs. Contendo também metadados, guarda também o nome do arquivo, além do sha. Sendo responsável por montar toda a estrutura de onde estão localizados os arquivos. Podendo apontar para blobs, bem como, outras árvores;
+ 
+* Commits - É o objeto que vai dar sentido, juntando tudo. Aponta para uma árvore, para um commit antes dele (parente), para um autor e uma mensagem, além do timestamp (data e hora)
+
+------------------------------
+
+Chaves SSH e Token
+
+12/08/2021 seria depreciada a autenticação via login e a senha;
+
+* Chave SSH - Forma de estabelecer uma conexão segura entre dois computadores;
+
+
+comando ssh-keygen -t ed25519 -C hevertonluizs@gmail.com
+
+cat id_ed25519.pub
+
+eval $(ssh-agent -s)
+
+ssh-add id_ed25519
+
+
+* Token de acesso pessoal
+
+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
+
+----------------------------------
+Primeiros comandos com um git
+
+
+git init - Inicia o projeto
+
+git config --global user.email "hevertonluizs@gmail.com"
+
+git config --global user.name Heverton
+
+git add * - Adicionar 
+git commit - Escrever a mensagem
+
+-a -> mostra arquivos ocultos
+
+git status
+
+mv - comando para mover arquivos
+
+git config --list -> Lista de todas as configurações que estão no github
+
+git remote add origin + link do repositório
+
+git push -u origin master
+

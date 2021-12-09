@@ -1,0 +1,27 @@
+Introdução ao Scrum
+
+Objetivo de Negócio -> Requisitos -> Processo de Desenvolvimento (Concepção, Análise e Design, Desenvolvimento, Testes, Implantação) -> Software
+
+
+* Tradição (Waterfall) - Só permite que o projeto avance quando a fase está inteiramente completa
+
+* Ágil - Software construído por partes e cada parte (cerca de um mês) executa-se em ciclos.
+
+* Scrum é um dos frameworks de gerenciamento de projetos ágeis;
+a) Equipes pequenas e multidisciplinares para produzir resultado;
+b) Pilares - Transparência, Adaptação e Inspeção
+
+----------------------------------
+
+Papéis e Responsabilidades
+
+PRODUCT OWNER(PO) - Representa a área de negócios, define as funcionalidades do software, prioriza as funcionalidades e garante que o time DEV entenda as funcionalidades;
+SCRUM MASTER(SM) - Garante o uso correto do Scrum, age como facilitador, auxilia o PO no planejamento e remove impedimentos;
+TIME DE DESENVOLVIMENTO(DEV) - Possui habilidades de tudo que é necessário para entregar o software;
+
+* Time Box - Tempo máximo para fazer uma cerimônia ou sprint
+
+a)Sprint - Dura cerca de 30 dias corridas, composta por Planejamento(PO, SM, DEV) dura cerca de 8 horas, Reuniões diárias (15min), Revisão da sprint(4h), Retrospectiva(3h).
+
+
+
