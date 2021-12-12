@@ -1,3 +1,7 @@
 * Conceito
 
 - É como se fosse uma extensão do javascript que adiciona a tipagem estática, auxiliando na redução de código.
+
+- O Parcel bundler é uma feature que agiliza o build por não precisar de nenhuma configuração para empacotar o projeto, sendo muito utilizado para pequenos e médios projetos React, Typescript ou Javascript puro.
+
+

@@ -59,3 +59,51 @@ input.addEventListener('input', (event) => {
 });
 
 //Generic types
+
+function preencheList<T>(array: any[], valor: T) {
+  return array.map(() => valor);
+}
+
+preencheList(['A', 'B', 'C'], 'd');
+
+//Condicionais no typescript
+
+interface IUsuario {
+  id: string;
+  email: string;
+}
+interface IAdmin {
+  cargo: 'gerente' | 'coordenador' | 'supervisor';
+}
+
+function redirecione(usuario: IUsuario | IAdmin) {
+  if ('cargo' in usuario) {
+    //redirecionar para a área de Administrador
+  } else {
+    //redirecionar para a área de usuário
+  }
+}
+
+//Variáveis com propriedade readonly e private
+
+interface SuperHeroi {
+  nome: string;
+  forca: number;
+  voa?: boolean;
+}
+
+type SuperHeroiLeitura = {
+  +readonly [K in keyof SuperHeroi]: SuperHeroi[K];
+};
+
+class MyHero implements SuperHeroiLeitura {
+  nome;
+  forca;
+
+  constructor(nome, forca) {
+    this.nome = nome;
+    this.forca = forca;
+  }
+}
+
+const heroi = new MyHero('Super Choque', 50);
