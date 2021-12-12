@@ -1,0 +1,3 @@
+* Conceito
+
+- É como se fosse uma extensão do javascript que adiciona a tipagem estática, auxiliando na redução de código.
